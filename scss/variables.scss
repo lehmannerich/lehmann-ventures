@@ -1,0 +1,28 @@
+$font-stack: Lato, sans-serif;
+
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.5;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1080px) { @content; }
+  }
+  @if $point == mama-bear {
+    @media (max-width: 800px) { @content; }
+  }
+  @if $point == baby-bear {
+    @media (max-width: 480px) { @content; }
+  }
+}

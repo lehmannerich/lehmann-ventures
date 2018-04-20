@@ -1,0 +1,20 @@
+@import 'variables';
+
+body {
+
+  font-family: $font-stack;
+
+
+  background-color: red;
+
+  @include breakpoint(papa-bear) {
+    background-color: lightyellow;
+    }
+  @include breakpoint(mama-bear) {
+    background-color: lightgreen;
+    }
+  @include breakpoint(baby-bear) {
+    background-color: lightblue;
+    }
+
+}
