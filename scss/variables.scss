@@ -1,4 +1,4 @@
-$font-stack: Lato, sans-serif;
+$font-stack: AvenirNextBold,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 
 $base-font-size: 16px;
 $base-line-height: $base-font-size * 1.5;
@@ -25,4 +25,11 @@ $base-line-height: $base-font-size * 1.5;
   @if $point == baby-bear {
     @media (max-width: 480px) { @content; }
   }
+}
+
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
