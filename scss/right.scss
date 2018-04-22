@@ -1,0 +1,39 @@
+.right {
+  
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  .bg0 { background-color:#1f1f1f; color: #fff; }
+  .bg1 { background-color:lightyellow; }
+  .bg2 { background-color:lightblue; }
+  .bg3 { background-color:lightgreen; }
+
+  div {
+    height: 100vh;
+    @include breakpoint(baby-bear) {height: 50vh;}
+    @include breakpoint(mama-bear) {height: 50vh;}
+
+
+  .text {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 90px;
+      padding: 55px;
+      text-align: center;
+
+      @include breakpoint(grandpa-bear) {font-size: 78px; padding: 10px;}
+      @include breakpoint(papa-bear) {font-size: 66px;}
+      @include breakpoint(mama-bear) {font-size: 72px; padding: 0 10%;}
+      @include breakpoint(baby-bear) {font-size: 41px;}
+    }
+
+  }
+
+  }
+
+}

@@ -1,0 +1,81 @@
+.left {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 55px;
+    margin: 0;
+    padding: 0;
+    color: #353535;
+    font-weight: 700;
+    line-height: 0.5;
+    @include breakpoint(grandpa-bear) {font-size: 52px;}
+    @include breakpoint(papa-bear) {font-size: 39px;}
+    @include breakpoint(mama-bear) {font-size: 39px;}
+    @include breakpoint(baby-bear) {font-size: 34px; margin-bottom: 28px;}
+    &:hover {
+      cursor: pointer;
+    }
+    &.active {
+      color: #353535;
+    }
+  }
+  h2 {
+    font-size: 34px;
+    color: #353535;
+    font-weight: 500;
+    line-height: 0.9;
+    @include breakpoint(papa-bear) {font-size: 24px;}
+    @include breakpoint(mama-bear) {font-size: 24px;}
+    @include breakpoint(baby-bear) {font-size: 22px;}
+  }
+  h3 {
+    font-size: 30px;
+    color: #353535;
+    font-weight: 500;
+    line-height: 1.9;
+    display: block;
+
+    transition: all 0.2s ease-out;
+    border-top: 0px solid #eee;
+    border-bottom: 0px solid #eee;
+
+    &.active {
+        font-size:38px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    @include breakpoint(papa-bear) {
+      font-size: 24px;
+      &.active {font-size:30px;}
+    }
+    @include breakpoint(mama-bear) {
+      font-size: 24px;
+      &.active {font-size:30px;}
+    }
+    @include breakpoint(baby-bear) {
+      font-size: 22px;
+      margin: 15px 0;
+      &.active {font-size:27px;}
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+  #mail {
+    @include breakpoint(baby-bear) {
+      position: absolute;
+      background-color: #fff;
+      right: 20px;
+      top: 180px;
+    }
+  }
+
+}
