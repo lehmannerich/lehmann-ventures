@@ -53,7 +53,6 @@ var changeActiveState = function (info) {
 slider.events.on('indexChanged', changeActiveState);
 
 
-
 document.querySelector('#lv').onclick = function () {
   slider.goTo(0);
   document.querySelector('.active').classList.remove('active');
