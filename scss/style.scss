@@ -1,8 +1,5 @@
 @import 'variables';
-// @import 'left';
-// @import 'right';
 
-//THIS IS THE MASTER
 body {
 
   margin: 0;
@@ -33,3 +30,6 @@ body {
   }
 
 }
+
+@import 'left';
+@import 'right';
