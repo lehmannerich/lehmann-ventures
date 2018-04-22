@@ -16,6 +16,9 @@ $base-line-height: $base-font-size * 1.5;
 }
 
 @mixin breakpoint($point) {
+  @if $point == grandpa-bear {
+    @media (max-width: 1200px) { @content; }
+  }
   @if $point == papa-bear {
     @media (max-width: 1080px) { @content; }
   }
@@ -25,7 +28,17 @@ $base-line-height: $base-font-size * 1.5;
   @if $point == baby-bear {
     @media (max-width: 480px) { @content; }
   }
+  // @if $point == mama-bear-above {
+  //   @media (min-width: 801px) { @content; }
+  // }
 }
+
+// .hide-below-mb {
+//   @include breakpoint(mama-bear) {display: none;}
+// }
+// .hide-above-mb {
+//   @include breakpoint(mama-bear-above) {display: none;}
+// }
 
 .cover {
   -webkit-background-size: cover;
