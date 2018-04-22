@@ -28,17 +28,17 @@ $base-line-height: $base-font-size * 1.5;
   @if $point == baby-bear {
     @media (max-width: 480px) { @content; }
   }
-  // @if $point == mama-bear-above {
-  //   @media (min-width: 801px) { @content; }
-  // }
+  @if $point == mama-bear-above {
+    @media (min-width: 801px) { @content; }
+  }
 }
 
-// .hide-below-mb {
-//   @include breakpoint(mama-bear) {display: none;}
-// }
-// .hide-above-mb {
-//   @include breakpoint(mama-bear-above) {display: none;}
-// }
+.hide-below-mb {
+  @include breakpoint(mama-bear) {display: none;}
+}
+.hide-above-mb {
+  @include breakpoint(mama-bear-above) {display: none;}
+}
 
 .cover {
   -webkit-background-size: cover;
