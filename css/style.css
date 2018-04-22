@@ -159,13 +159,6 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/left\.scss}line{font-family:\0000364}}
     .left h3:hover {
       cursor: pointer; }
-  @media (max-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/left\.scss}line{font-family:\0000370}}
-    .left #mail {
-      position: absolute;
-      background-color: #fff;
-      right: 20px;
-      top: 180px; } }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/right\.scss}line{font-family:\000031}}
 .right {
@@ -202,5 +195,28 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/right\.scss}line{font-family:\0000311}}
       .right .right-item {
         height: 50vh; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/right\.scss}line{font-family:\0000316}}
+    .right .right-item h3 {
+      font-size: 90px;
+      padding: 55px;
+      text-align: center; }
+      @media (max-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/right\.scss}line{font-family:\0000316}}
+        .right .right-item h3 {
+          font-size: 78px;
+          padding: 10px; } }
+      @media (max-width: 1080px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/right\.scss}line{font-family:\0000316}}
+        .right .right-item h3 {
+          font-size: 66px; } }
+      @media (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/right\.scss}line{font-family:\0000316}}
+        .right .right-item h3 {
+          font-size: 72px;
+          padding: 0 10%; } }
+      @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/lehmann-ventures\/scss\/right\.scss}line{font-family:\0000316}}
+        .right .right-item h3 {
+          font-size: 41px; } }
 
 /*# sourceMappingURL=style.css.map */

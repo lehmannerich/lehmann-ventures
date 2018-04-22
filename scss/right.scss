@@ -13,20 +13,16 @@
     @include breakpoint(baby-bear) {height: 50vh;}
     @include breakpoint(mama-bear) {height: 50vh;}
 
-    
+    h3 {
+      font-size: 90px;
+      padding: 55px;
+      text-align: center;
 
-    // h3 {
-    //   font-size: 90px;
-    //   padding: 55px;
-    //   text-align: center;
-    //
-    //   @include breakpoint(grandpa-bear) {font-size: 78px; padding: 10px;}
-    //   @include breakpoint(papa-bear) {font-size: 66px;}
-    //   @include breakpoint(mama-bear) {font-size: 72px; padding: 0 10%;}
-    //   @include breakpoint(baby-bear) {font-size: 41px;}
-    // }
-
-
+      @include breakpoint(grandpa-bear) {font-size: 78px; padding: 10px;}
+      @include breakpoint(papa-bear) {font-size: 66px;}
+      @include breakpoint(mama-bear) {font-size: 72px; padding: 0 10%;}
+      @include breakpoint(baby-bear) {font-size: 41px;}
+    }
 
   }
 

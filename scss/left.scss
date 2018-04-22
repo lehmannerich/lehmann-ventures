@@ -67,13 +67,4 @@
 
   }
 
-  #mail {
-    @include breakpoint(baby-bear) {
-      position: absolute;
-      background-color: #fff;
-      right: 20px;
-      top: 180px;
-    }
-  }
-
 }
