@@ -1,4 +1,7 @@
 @import 'variables';
+// @import 'menu';
+
+$headerfontsize: 55px;
 
 body {
 
@@ -12,12 +15,20 @@ body {
   display: -ms-flex;
   display: flex;
 
+  overflow: hidden;
+
   & > * {
     height: 100vh;
     flex: 1;
   }
 
   @include breakpoint(baby-bear) {
+    flex-direction: column;
+    & > * {
+      height: 50vh;
+    }
+  }
+  @include breakpoint(mama-bear) {
     flex-direction: column;
     & > * {
       height: 50vh;
@@ -32,15 +43,21 @@ body {
     align-items: center;
 
     h1 {
-      font-size: 55px;
+      font-size: $headerfontsize;
       margin: 0;
       padding: 0;
       color: #353535;
       font-weight: 700;
       line-height: 0.5;
-      @include breakpoint(papa-bear) {font-size: 39px;}
-      @include breakpoint(mama-bear) {font-size: 25px;}
-      @include breakpoint(baby-bear) {font-size: 34px;}
+      @include breakpoint(papa-bear) {font-size: $headerfontsize - 16px;}
+      @include breakpoint(mama-bear) {font-size: $headerfontsize - 16px;}
+      @include breakpoint(baby-bear) {font-size: $headerfontsize - 21px; margin-bottom: 28px;}
+      &:hover {
+        cursor: pointer;
+      }
+      &.active {
+        color: #353535;
+      }
     }
     h2 {
       font-size: 34px;
@@ -48,7 +65,7 @@ body {
       font-weight: 500;
       line-height: 0.9;
       @include breakpoint(papa-bear) {font-size: 24px;}
-      @include breakpoint(mama-bear) {font-size: 19px;}
+      @include breakpoint(mama-bear) {font-size: 24px;}
       @include breakpoint(baby-bear) {font-size: 22px;}
     }
     h3 {
@@ -57,23 +74,57 @@ body {
       font-weight: 500;
       line-height: 1.9;
       display: block;
-      @include breakpoint(papa-bear) {font-size: 24px;}
-      @include breakpoint(mama-bear) {font-size: 19px;}
-      @include breakpoint(baby-bear) {font-size: 22px;}
+
+      transition: all 0.2s ease-out;
+      border-top: 0px solid #eee;
+      border-bottom: 0px solid #eee;
+
+      &.active {
+          font-size:38px;
+          border-top: 1px solid #eee;
+          border-bottom: 1px solid #eee;
+      }
+
+      @include breakpoint(papa-bear) {
+        font-size: 24px;
+        &.active {font-size:30px;}
+      }
+      @include breakpoint(mama-bear) {
+        font-size: 24px;
+        &.active {font-size:30px;}
+      }
+      @include breakpoint(baby-bear) {
+        font-size: 22px;
+        margin: 15px 0;
+        &.active {font-size:27px;}
+      }
+
       &:hover {
         cursor: pointer;
       }
+
     }
-    .mt-3 {margin-top: 46px;}
+
+    #mail {
+      @include breakpoint(baby-bear) {
+        position: absolute;
+        background-color: #fff;
+        right: 20px;
+        top: 180px;
+      }
+    }
+
   }
 
   .right {
     div {
       height: 100vh;
       @include breakpoint(baby-bear) {height: 50vh;}
+      @include breakpoint(mama-bear) {height: 50vh;}
     }
   }
 
+  .bg0 { background-color:silver; }
   .bg1 { background-color:lightyellow; }
   .bg2 { background-color:lightblue; }
   .bg3 { background-color:lightgreen; }

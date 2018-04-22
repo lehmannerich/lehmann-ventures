@@ -1,0 +1,31 @@
+// Menu Item Variables
+// The number of items in the menu
+$menu-items: 4;
+// We multiply it by 1% to get the correct % unit
+$height: (100/$menu-items) * 1%;
+
+// Colors
+$background-color: #121212;
+$indicator-color: #e82d00;
+
+
+// The parent container
+.PrimaryNav {
+  max-height: 160px;
+  height: 100%;
+}
+
+// The menu items
+.Nav-item {
+  // Our current calculation of 5 items will generate 20%
+  height: $height;
+
+  // If the menu item is active, give it the same color as the indicator
+  &.active {
+    color: $indicator-color;
+  }
+
+  &:hover {
+      color: $indicator-color;
+  }
+}

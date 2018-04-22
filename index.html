@@ -3,36 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Lehmann Ventures</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 
   </head>
 
   <body>
 
-    <div class="left" id="left">
+    <div id="left" class="left">
       <div class="text">
-        <h1>Lehmann Ventures</h1>
-        <h2>digital productions</h2>
-        <h3 class="mt-3" v-on:mouseover="console.log('On')" v-on:mouseleave="console.log('Off')"> Something Here </h3>
-        <h3> Something Here </h3>
-        <h3> Something Here </h3>
+        <h1 id="lv" class="active">Lehmann Ventures</h1>
+
+        <h3 id="ec" class="mt-3"> Entrepreneurial Coaching </h3>
+        <h3 id="tw" class=""> Technology Workshops</h3>
+        <h3 id="ac" class=""> Product Development </h3>
+        <!-- <h3 id="mail" class=""> <i class="far fa-envelope"></i> </h3> -->
       </div>
     </div>
 
-    <div class="right cover my-slider" id="right">
-        <div class="bg1">1</div>
-        <div class="bg2">2</div>
-        <div class="bg3">3</div>
-        <div class="bg1">3</div>
-        <div class="bg2">3</div>
-        <div class="bg3">3</div>
-        <div class="bg1">3</div>
+    <div id="right" class="right cover my-slider">
+        <div class="bg0">
+          <h2>Hi. I'm glad to see you here</h2>
+          <h4><i class="far fa-caret-square-left"></i> Use arrow keys to navigate <i class="far fa-caret-square-right"></i></h4>
+        </div>
+        <div class="bg1">
+          <h2>Hi. I'm glad to see you here</h2>
+          <h4>#buzzwords #projects that I have done</h4>
+        </div>
+        <div class="bg2">
+          <h2>Hi. I'm glad to see you here</h2>
+          <h4>#buzzwords #projects that I have done</h4>
+        </div>
+        <div class="bg3">
+          <h2>Hi. I'm glad to see you here</h2>
+          <h4>#buzzwords #projects that I have done</h4>
+        </div>
     </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
